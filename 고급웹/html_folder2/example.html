@@ -1,0 +1,21 @@
+<script>
+	function add()
+	{
+		var i, sum = 0, num;
+
+		for(i = 0; i < arguments.length; i++)
+		{
+			num = sum + arguments[i];
+			document.write("계산할 배열의 값 : " + arguments[i] + "<br>" + "현재 계산된 sum의 값 : " + num + "<br> ------------------------<br>");
+			sum += arguments[i];
+		}
+		document.write("최종 누적 합 결과 : " + sum + "<br>***************************** <br><p/>");
+	}
+
+	add(2, 3);
+	add(2, 3, 4);
+	add(4, 5, 6, 7, 8);
+	add(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+</script>
+
