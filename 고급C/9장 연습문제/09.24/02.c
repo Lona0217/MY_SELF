@@ -8,7 +8,7 @@ int main()
 {
 	srand((unsigned)time(NULL)); // unsigned: 형변환,음수 방지, NULL: time의 매개변수
 	// seedrandom: 계속해서 난수 생성, 계속해서 바뀜
-
+	
 	int num1 = 0;
 	int num2 = 0;
 	int num3 = 0;
