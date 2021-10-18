@@ -1,13 +1,13 @@
 <script>
 	function add()
 	{
-		var i, sum = 0, num;
+		var i, sum = 0;
 
 		for(i = 0; i < arguments.length; i++)
 		{
-			num = sum + arguments[i];
-			document.write("계산할 배열의 값 : " + arguments[i] + "<br>" + "현재 계산된 sum의 값 : " + num + "<br> ------------------------<br>");
 			sum += arguments[i];
+			document.write("계산할 배열의 값 : " + arguments[i] + "<br>" + "현재 계산된 sum의 값 : " + sum + "<br> ------------------------<br>");
+			
 		}
 		document.write("최종 누적 합 결과 : " + sum + "<br>***************************** <br><p/>");
 	}

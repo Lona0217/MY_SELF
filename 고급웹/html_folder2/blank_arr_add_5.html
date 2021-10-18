@@ -1,0 +1,44 @@
+<script>
+	var com = [95, 88, , 72, 68, , 99, 82, 78, 85];
+	var getAvg;
+
+	function printAvg()
+	{
+		var i=0, sum = 0, count = 0;
+		var n = com.length;
+
+		document.write(n + "명의 점수 입력<p/>");
+
+		while(i <= n)
+		{
+			if(com[i] !== undefined)
+			{
+				sum += com[i];
+				count++;
+			}
+			i++;
+		}
+
+		document.write("점수를 입력한 학생 : " + count + "명<p/>");
+		printScore();
+		document.write("<br>" +"총합 : " + sum + "<p/>");
+		return (sum/count);
+	}
+
+	function printScore()
+	{
+		var n = com.length;
+		
+		for(var i=0; i<n; i++)
+		{
+			if(com[i] === undefined)
+				document.write(i+1 + "번 학생 점수 = 없음" + "<br>");
+			else
+				document.write(i+1 + "번 학생 점수 = " + com[i] + "<br>");
+		}
+
+	}
+
+	getAvg = printAvg(); // = (sum/n);
+	document.write("평균 : " + getAvg + "<p/>");	
+</script>
