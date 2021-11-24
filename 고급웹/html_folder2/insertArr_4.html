@@ -19,15 +19,12 @@
 
 		for(i = 0; i < arrdata.length; i++)
 		{
-			for(i = 0; ;i++)
+			if(arrdata[i]=={3,6,88})
 			{
-				if(arrdata[i] === arguments[i])
-				{
-					arrdata[i] = 0;
-				}
-				else
-					document.write(arrdata[i] + " ");
+				arrdata[i] = 0;
 			}
+			else
+				document.write(arrdata[i] + " ");
 		}
 
 		addArr();

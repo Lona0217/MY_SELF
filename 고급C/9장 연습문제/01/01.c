@@ -46,7 +46,7 @@ void add(int x, int y)
 
 	printf("µ¡¼ÀÀº ÃÑ %d¹ø ½ÇÇàµÇ¾ú½À´Ï´Ù.\n", count);
 	value = x + y;
-	printf("¿¬»ê °á°ú: %d\n", value);
+	printf("¿¬»ê °á°ú: %d\n\n", value);
 }
 
 void min(int x, int y)
@@ -57,7 +57,7 @@ void min(int x, int y)
 
 	printf("»¬¼ÀÀº ÃÑ %d¹ø ½ÇÇàµÇ¾ú½À´Ï´Ù.\n", count);
 	value = x - y;
-	printf("¿¬»ê °á°ú: %d\n", value);
+	printf("¿¬»ê °á°ú: %d\n\n", value);
 }
 
 void mul(int x, int y)
@@ -68,7 +68,7 @@ void mul(int x, int y)
 
 	printf("°ö¼ÀÀº ÃÑ %d¹ø ½ÇÇàµÇ¾ú½À´Ï´Ù.\n", count);
 	value = x * y;
-	printf("¿¬»ê °á°ú: %d\n", value);
+	printf("¿¬»ê °á°ú: %d\n\n", value);
 }
 
 void div(int x, int y)
@@ -79,5 +79,5 @@ void div(int x, int y)
 
 	printf("³ª´°¼ÀÀº ÃÑ %d¹ø ½ÇÇàµÇ¾ú½À´Ï´Ù.\n", count);
 	value = x / y;
-	printf("¿¬»ê °á°ú: %d\n", value);
+	printf("¿¬»ê °á°ú: %d\n\n", value);
 }
